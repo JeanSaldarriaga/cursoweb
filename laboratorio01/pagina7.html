@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Pagina 7</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <!-- Las tablas permiten seccionar la informacion dentro de la pagina web.
+    Para poder crear la tabla utilizamos la etiqueta <table></table> dentro de ellas creamos las filas para ellos utilizamos las etiqueas <tr></tr> y dentro de las filas creamos las columnas co la etiqueta <td></td> 
+    Se se quiere bordear una tabla se agrega el atributo border="#"
+-->
+    <h2>Ejemplo de Tabla </h2>
+    <h3>Ejemplo 1</h3>
+    <table border="1">
+        <tr>
+            <td>Codigo</td>
+            <td>Nombres y Apellidos</td>
+            <td>Curso</td>
+            <td>Promedio</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Daniel Osorio Morales </td>
+            <td>Photoshop</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Stefani Daniela Castillo </td>
+            <td>Illustator</td>
+            <td>17</td>
+        </tr>
+    </table>
+    <h3>Ejemplo 2</h3>
+    <!-- <th></th>, esta etiqueta permite agregar un encabezado de tabla, esto quiere decir que el texto que se escriba aparecera en negrita -->
+    <table border="1">
+        <tr>
+            <th>Codigo</th>
+            <th>Curso</th>
+            <th>Precio</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Microsoft Windows</td>
+            <td>180</td>
+            <td>Mañana</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Microsoft Word</td>
+            <td>220</td>
+            <td>Tarde</td>
+        </tr>
+    </table>
+    <br>
+    <!-- cellspacing="#" permite dar un espacio entre celdas 
+    cellpading="#"  Permite dar relleno entre celdas -->
+    <h3>Ejemplo 3</h3>
+    <table border="1" cellspacing="10" cellpadding="10" >
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            <tr>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+            </tr>
+    </table>
+    <h3>Ejemplo 4</h3>
+    <!-- aling permite definir las alineaciones de toda la tabla o de una fila especifica  -->
+    <table border="1" cellspacing="2" cellpadding="5" >
+        <tr>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <tr align="center">
+            <th>1</th>
+            <th>Smart TV Sony 42 pulgadas</th>
+            <th>1800</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Laptop Lenovo I5 </th>
+            <th>2500</th>
+        </tr>
+    </table>
+    <h3>Ejemplo 5</h3>
+    <!-- Combinar filas y columnas 
+    colspam="#" permite combinar filas y columnas  -->
+    <table border="1" cellspading="2" cellpadding="5">
+        <tr>
+            <td colspan="2">c1 y c2</td> 
+            <td>c3</td>
+            <td>c4</td>
+        </tr>
+        <tr>
+            <td>c5</td>
+            <td colspan="3">c6 y c7 y c8</td>
+        </tr>
+        <tr>
+            <td>c9</td>
+            <td colspan="2">c10 y c11</td>
+            <td>c12</td>
+        </tr>
+        <tr>
+            <td colspan="4">c13 y c14 y c15 y c16</td>
+        </tr>
+    </table>
+    <h3>Ejemeplo 6</h3>
+    <!-- rowspan=# permite combinar filas -->
+    <table border="1" cellspacing="2" cellpadding="5">
+        <tr>
+            <td rowspan="2">c1 y c5</td>
+            <td>c2</td>
+            <td rowspan="3">c3 y c7 y c11</td>
+            <td rowspan="4">c4 y c8 y c12 y c16</td>
+        </tr>
+        <tr>
+            <td rowspan="2">c6 y c10</td>
+        </tr>
+        <tr>
+            <td>c9</td>
+        </tr>
+        <tr>
+            <td>c13</td>
+            <td>c14</td>
+            <td>c15</td>
+        </tr>
+
+    </table>
+    <h3>Ejemplo 7</h3>
+    <table border="1" cellspacing="2" cellpadding="5">
+        <tr>
+            <td colspan="2">c1 y c2</td>
+            <td>c3</td>
+            <td>c4</td>
+        </tr>
+        <tr>
+            <td>c5</td>
+            <td>c6</td>
+            <td rowspan="2">c7 y c11</td>
+            <td rowspan="3">c8 y c12 y c16</td>
+        </tr>
+        <tr>
+            <td>c9</td>
+            <td>c10</td>
+        </tr>
+        <tr>
+            <td colspan="3">c13 y c14 y c15</td>
+        </tr>
+    </table>
+    <h3>Ejemeplo 8</h3>
+    <!-- En HTML 5 las tablas se seccionan en las siguientes partes:
+    <head></head> define la cabecera de las tablas
+    <tfoot></tfoot> define el pie de pagina de la tabla, es opcional
+    <tbody></tbody> define el cuerpo de la tabla  -->
+    <table border="1">
+        <thead>
+            <th>codigo</th>
+            <th>Nombre y Aprellidos</th>
+            <th>Curso</th>
+            <th>Promedio</th>
+        </thead>
+        <tfoot>
+            <th>pie 1</th>
+            <th>pie 2</th>
+            <th>pie 3</th>
+            <th>pie 4</th>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mario Huapalla</td>
+                <td>Diseño Web</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <p align="center">
+        <a href="index.html">Ir al Menu Principal</a>
+    </p>
+</body>
+</html>

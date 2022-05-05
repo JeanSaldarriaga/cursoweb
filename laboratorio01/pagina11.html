@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Pagina 11</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <!-- Para cerar formularios existen barias etiquetas dentro de las principales conocemos: 
+    <form></form>, define el formulario dentro de la etiqueta form podemos agregar el atributo method="POST/GET" es el metodo de envio de datos, cuando es POST los datos sen envian de forma oculta y cuando es GET los datos se envian por la barra de direcciones
+    <fieldset></fieldset>, va dentro del formularios y sirve para realizar un borde al formulario
+    <legend></legend>, esta etiqueta permite agregar un titulo al formulario
+    <label for=""></label>, permite agregar una etiqueta al formulario, en la cual podemos agregar un texto  
+    <input type="Tipo _Etiqueta">, nos permite agregar una gran cantidad de etiquetas de etiquetas entre las cajas de texto, botones de opcion, casillas de verificacion, etc.
+    <select name="" id=""></select>, Permite agregar un cuadro combinado y dentro de cualdro combinado cada elelemto sera agregado con la etiqueta <option value=""></option>
+    <textarea name="" id="" cols="30" rows="10"></textarea>, permite agregar un cuadro de texto para poder agregar informacion  -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulario y sus controles</legend>
+            <label for="">Etiqueta permite escribir texto</label><br>
+            <fieldset>
+                <legend>Botones</legend>
+             input text: <input type="text"><br>
+             input submit: <input type="reset" value="boton1"><br>
+             input button: <input type="button" value="Calcular"><br>
+             inpur image: <input type="image" src="IMG/html.png" width="40px" height="30px"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Caja de Texto</legend>
+             input text: <input type="text"><br>
+             input Password: <input type="password"><br>
+             input hidden: <input type="hidden"><br>
+             input Email: <input type="email"><br>
+             input Url (Direccion web): <input type="url"><br>
+             input Telefono: <input type="tel"><br>
+             input Busqueda: <input type="search"><br>
+             input Numerica: <input type="number"><br>
+             input Fecha: <input type="date"><br>
+             input Fecha y Hora Local: <input type="datetime-local"><br>
+             input Semana: <input type="week"><br>
+             input Mes: <input type="month"><br>
+            </fieldset>            
+            <fieldset>
+                <legend>No son cajas de texto</legend>
+             input Color: <input type="color"><br>
+             input Ramgo: <input type="range"><br>
+             input File: <input type="file"><br>
+             input boton de opcion: <input type="radio" name="categoria" id="">A<input type="radio" name="categoria" id="">B<input type="radio" name="categoria" id="">C<br>
+             input Casilla de verificacion: <input type="checkbox" name="" id="">Habilitado<input type="checkbox" name="" id="">Descuento
+            </fieldset>
+            <fieldset>
+                <legend>Cuadro combinado</legend>
+                Select:
+                <select name="" id="">
+                    <option value="">Seleccione distrito</option>
+                    <option value="">Cercado de Lima</option>
+                    <option value="">Breña</option>
+                    <option value="">Comas</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Cuadro de Texto</legend>
+                Textarea: <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </fieldset>    
+    </form>
+    <hr>
+    <p align="center">
+        <a href="index.html">Ir al Menu Principal</a>
+    </p>
+</body>
+</html>
