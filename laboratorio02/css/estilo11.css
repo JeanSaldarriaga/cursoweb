@@ -1,0 +1,41 @@
+body{
+    background-color: darkblue;
+}
+.contenedor{
+    background-color: white;
+    margin: auto;
+}
+/* Existen varios tipos de bordes que se pueden aplicar dentro de cuales tenemos: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */
+.borde1{
+    border-style: dotted;
+}
+.borde2{
+    border-style: dashed;
+}
+.borde3{
+    border-style: solid;
+}
+.borde4{
+    border-style: double;
+}
+.borde5{
+    border-style: groove;
+}
+.borde6{
+    border-style: groove;
+}
+.borde7{
+    border-style: ridge;
+}
+.borde8{
+    border-style: inset;
+}
+.borde9{
+    border-style: outset;
+}
+.borde10{
+    border-style: none;
+}
+.borde11{
+    border-style: hidden;
+}
